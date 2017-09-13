@@ -4,6 +4,7 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestResult;
 import junit.framework.TestSuite;
+import org.junit.Assert;
 import org.omg.CORBA.TIMEOUT;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -27,6 +28,9 @@ public class AppTest
         driver.get("https://en.wikipedia.org/wiki/Main_Page");
         driver.findElement(By.name("search")).sendKeys("Silver");
         driver.findElement(By.name("go")).click();
+        String searchHeader = driver.findElement(By.id("firstHeading")).getText();
+        Assert.assertTrue(searchHeader.contains("Silver"));
+
         driver.close();
         driver.quit();
     }
