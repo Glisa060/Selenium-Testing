@@ -25,13 +25,31 @@ public class AppTest
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Milan\\IdeaProjects\\Project\\src\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-        driver.get("https://en.wikipedia.org/wiki/Main_Page");
-        driver.findElement(By.name("search")).sendKeys("Silver");
-        driver.findElement(By.name("go")).click();
-        String searchHeader = driver.findElement(By.id("firstHeading")).getText();
-        Assert.assertTrue(searchHeader.contains("Silver"));
-
+        driver.navigate().to("https://www.rt.com/news/");
+        driver.manage().window().maximize();
+        driver.findElement(By.className("seach-form__input-text")).sendKeys("America");
+        driver.findElement(By.className("seach-form__input-submit")).click();
+//        String searchHeader = driver.findElement(By.className("w3-center")).getText();
+//        Assert.assertTrue(searchHeader.contains(""));
+        List<WebElement> list = driver.findElements(By.tagName("a"));
+        System.out.println("Number of links is " +list.size());
+        for (int i = 0; i < list.size(); i++ ) {
+            if (list.get(i).getText().equals("News")) {
+                list.get(i).click();
+                break;
+            }
+        }
         driver.close();
-        driver.quit();
+    }
+
+    @org.junit.Test
+    public void test2() {
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Milan\\IdeaProjects\\Project\\src\\chromedriver.exe");
+        WebDriver driver = new ChromeDriver();
+        driver.navigate().to("http://www.echoecho.com/htmlforms10.htm");
+        driver.manage().window().maximize();
+        List<WebElement> list = driver.findElements(By.name("radio1"));
+        System.out.println("Number of radio buttons is " + list.size());
+        driver.close();
     }
 }
