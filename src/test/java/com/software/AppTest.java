@@ -14,9 +14,10 @@ import java.util.concurrent.TimeUnit;
  */
 public class AppTest
 {
+    private final String FILE = "C:\\Users\\Milan\\IdeaProjects\\Selenium Testing\\src\\chromedriver.exe";
     @org.junit.Test
     public void test () {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Milan\\IdeaProjects\\Project\\src\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", FILE);
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         driver.navigate().to("https://www.rt.com/news/");
@@ -37,7 +38,7 @@ public class AppTest
 
     @org.junit.Test
     public void test2() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Milan\\IdeaProjects\\Project\\src\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", FILE);
         WebDriver driver = new ChromeDriver();
         driver.navigate().to("http://www.echoecho.com/htmlforms10.htm");
         driver.manage().window().maximize();
