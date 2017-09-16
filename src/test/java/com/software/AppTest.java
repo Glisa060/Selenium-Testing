@@ -1,18 +1,12 @@
 package com.software;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestResult;
-import junit.framework.TestSuite;
-import org.junit.Assert;
-import org.omg.CORBA.TIMEOUT;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
-import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -33,12 +27,11 @@ public class AppTest
 //        Assert.assertTrue(searchHeader.contains(""));
         List<WebElement> list = driver.findElements(By.tagName("a"));
         System.out.println("Number of links is " +list.size());
-        for (int i = 0; i < list.size(); i++ ) {
-            if (list.get(i).getText().equals("News")) {
-                list.get(i).click();
+        for (WebElement aList : list)
+            if (aList.getText().equals("News")) {
+                aList.click();
                 break;
             }
-        }
         driver.close();
     }
 
