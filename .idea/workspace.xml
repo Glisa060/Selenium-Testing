@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="985046f5-bfe5-4bcd-942f-4f2f97bf2051" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/selenium-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.software.AppTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/com.software.AppTest.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/software/AppTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/software/AppTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/software/AppTest.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/software/App.class" afterPath="$PROJECT_DIR$/target/classes/com/software/App.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/selenium.iml" afterPath="$PROJECT_DIR$/selenium.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/software/AppTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/software/AppTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -34,8 +28,8 @@
       <file leaf-file-name="AppTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/software/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="48" column="58" lean-forward="true" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
+            <state relative-caret-position="246">
+              <caret line="72" column="46" lean-forward="true" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,6 +50,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/selenium.iml" />
         <option value="$PROJECT_DIR$/src/test/java/com/software/AppTest.java" />
       </list>
     </option>
@@ -356,38 +351,52 @@
       <option name="presentableId" value="Default" />
       <updated>1505607413525</updated>
       <workItem from="1505607415166" duration="468000" />
-      <workItem from="1505645799402" duration="3472000" />
+      <workItem from="1505645799402" duration="7611000" />
     </task>
+    <task id="LOCAL-00001" summary="Update">
+      <created>1505650975902</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1505650975902</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppTest_test2 - 2017.09.17 at 02h 17m 47s.xml">
-      <configuration name="AppTest.test2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_test2 - 2017.09.17 at 02h 18m 49s.xml">
-      <configuration name="AppTest.test2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_test2 - 2017.09.17 at 02h 19m 31s.xml">
-      <configuration name="AppTest.test2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_test2 - 2017.09.17 at 13h 06m 10s.xml">
-      <configuration name="AppTest.test2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_test3 - 2017.09.17 at 14h 00m 08s.xml">
+    <history-entry file="AppTest_test3 - 2017.09.17 at 15h 06m 54s.xml">
       <configuration name="AppTest.test3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_test3 - 2017.09.17 at 14h 02m 04s.xml">
+    <history-entry file="AppTest_test3 - 2017.09.17 at 15h 09m 31s.xml">
       <configuration name="AppTest.test3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_test3 - 2017.09.17 at 14h 08m 37s.xml">
+    <history-entry file="AppTest_test3 - 2017.09.17 at 15h 10m 23s.xml">
       <configuration name="AppTest.test3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_test3 - 2017.09.17 at 14h 09m 27s.xml">
+    <history-entry file="AppTest_test3 - 2017.09.17 at 15h 11m 35s.xml">
+      <configuration name="AppTest.test3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_test3 - 2017.09.17 at 15h 12m 14s.xml">
+      <configuration name="AppTest.test3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_test3 - 2017.09.17 at 15h 14m 21s.xml">
+      <configuration name="AppTest.test3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_test3 - 2017.09.17 at 15h 18m 46s.xml">
+      <configuration name="AppTest.test3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_test3 - 2017.09.17 at 15h 23m 57s.xml">
+      <configuration name="AppTest.test3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_test3 - 2017.09.17 at 15h 29m 09s.xml">
+      <configuration name="AppTest.test3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_test3 - 2017.09.17 at 15h 31m 38s.xml">
       <configuration name="AppTest.test3" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3940000" />
+    <option name="totallyTimeSpent" value="8079000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -402,7 +411,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -428,6 +437,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -441,10 +454,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SeleniumTest.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-390">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selenium.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="62" lean-forward="false" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-546">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/software/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="48" column="58" lean-forward="true" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
+        <state relative-caret-position="246">
+          <caret line="72" column="46" lean-forward="true" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
