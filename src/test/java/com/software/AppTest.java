@@ -1,10 +1,12 @@
 package com.software;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -15,11 +17,12 @@ import java.util.concurrent.TimeUnit;
  */
 public class AppTest
 {
+    final static Logger logger = Logger.getLogger(AppTest.class);
     private final String FILE = "C:\\Users\\Milan\\IdeaProjects\\Selenium Testing\\src\\chromedriver.exe";
     private final String DRIVER = "webdriver.chrome.driver";
     @org.junit.Test
     public void test () {
-        System.setProperty(DRIVER, FILE);
+        System.setProperty(DRIVER,FILE);
         WebDriver driver = new ChromeDriver();
         driver.navigate().to("https://www.rt.com/news/");
         driver.manage().window().maximize();
@@ -34,6 +37,9 @@ public class AppTest
                 aList.click();
                 break;
             }
+        if (logger.isDebugEnabled()) {
+            logger.debug("This is a debug message: ");
+        }
         driver.close();
     }
 
@@ -54,8 +60,10 @@ public class AppTest
                 break;
             }
         }
+        if (logger.isDebugEnabled()) {
+            logger.debug("This is a debug message: ");
+        }
         driver.close();
-        driver.quit();
     }
 
     @org.junit.Test
@@ -74,7 +82,25 @@ public class AppTest
         driver.switchTo().defaultContent();
         WebElement Pageheader = driver.findElement(By.xpath("//*[@id=\"content\"]/h1"));
         System.out.println("Header text is: " +Pageheader.getText());
+        if (logger.isDebugEnabled()) {
+            logger.debug("This is a debug message: ");
+        }
         driver.close();
-        driver.quit();
+    }
+
+    @org.junit.Test
+    public void test4() {
+        System.setProperty(DRIVER,FILE);
+        WebDriver driver = new ChromeDriver();
+        driver.navigate().to("https://www.w3schools.com/css/css_dropdowns.asp");
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Select select = new Select(driver.findElement(By.xpath("//*[@id=\"main\"]/div[3]/div[2]/div/button")));
+       select.selectByVisibleText("Link 1");
+        if (logger.isDebugEnabled()) {
+            logger.debug("This is a debug message: ");
+        }
+       driver.close();
+       driver.quit();
     }
 }
